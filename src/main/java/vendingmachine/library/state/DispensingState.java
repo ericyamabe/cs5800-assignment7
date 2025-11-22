@@ -14,6 +14,6 @@ public class DispensingState implements State {
     }
 
     public void waitingForMoney(StateOfVendingMachine stateOfVendingMachine) {
-        // Do NOthing
+        // Do Nothing
     }
 }
