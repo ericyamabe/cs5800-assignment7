@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import vendingmachine.library.VendingMachine;
 import vendingmachine.library.handler.IdleHandler;
-import vendingmachine.library.handler.SnackDispenseHandler;
 import vendingmachine.library.handler.WaitingForMoneyHandler;
 
 import java.io.ByteArrayOutputStream;

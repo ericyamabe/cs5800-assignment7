@@ -4,9 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import vendingmachine.library.StateOfVendingMachine;
-import vendingmachine.library.state.DispensingState;
 import vendingmachine.library.state.IdleState;
-import vendingmachine.library.state.WaitingForMoneyState;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
