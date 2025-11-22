@@ -1,0 +1,122 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class TextEditor {
+    - String character
+    - Color color
+    - Font font
+    - Size size
+    + void setCharacter(String character)
+    + void setcolor(String color)
+    + void setFont(String font)
+    + void setSize(int size)
+    + void save(String fileName)
+    + String open(String fileName)
+    + String toString()
+}
+
+class SizeFactory {
+    - static SizeFactory
+    - HashMap sizes
+    + static SizeFactory getInstance()
+    + Size getSize(int sizeType)
+}
+
+class FontsFactory {
+    - static FontsFactory
+    - HashMap fonts
+    + static FontsFactory getInstance()
+    + Font getFont(String fontType)
+}
+
+class ColorsFactory {
+    - static ColorsFactory isntance
+    - HashMap colors
+    + static ColorsFactory getInstance()
+    + Color getColor(String colorType)
+}
+
+interface Color {
+    + String getName()
+}
+
+class Black {
+    - String name
+    + String getName()
+    + String toString()
+}
+
+class Blue {
+    - String name
+    + String getName()
+    + String toString()
+}
+
+class Red {
+    - String name
+    + String getName()
+    + String toString()
+}
+
+Color <|.. Black
+Color <|.. Blue
+Color <|.. Red
+
+interface Font {
+    + String getName()
+}
+
+class Arial {
+    - String name
+    + String getName()
+    + String toString()
+}
+
+class Calibri {
+    - String name
+    + String getName()
+    + String toString()
+}
+
+class Verdana {
+    - String name
+    + String getName()
+    + String toString()
+}
+
+Font <|.. Arial
+Font <|.. Calibri
+Font <|.. Verdana
+
+interface Size {
+    + int getValue()
+}
+
+class Twelve {
+    + int getValue()
+    + String toString()
+}
+
+class Fourteen {
+    + int getValue()
+    + String toString()
+}
+
+class Sixteen {
+    + int getValue()
+    + String toString()
+}
+
+Size <|.. Twelve
+Size <|.. Fourteen
+Size <|.. Sixteen
+
+TextEditor  *-- ColorsFactory
+TextEditor  *-- FontsFactory
+TextEditor  *-- SizeFactory
+
+ColorsFactory *-- Color
+FontsFactory *-- Font
+SizeFactory *-- Size
+
+@enduml

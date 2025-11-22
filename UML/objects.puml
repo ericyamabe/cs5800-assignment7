@@ -1,0 +1,301 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+
+object "c0 : TextEditor" as t0 {
+    character = "H"
+}
+object "c1 : TextEditor" as t1 {
+    character = "e"
+}
+object "c2 : TextEditor" as t2 {
+    character = "l"
+}
+object "c3 : TextEditor" as t3 {
+    character = "l"
+}
+object "c4 : TextEditor" as t4 {
+    character = "o"
+}
+object "c5 : TextEditor" as t5 {
+    character = "W"
+}
+object "c6 : TextEditor" as t6 {
+    character = "o"
+}
+object "c7 : TextEditor" as t7 {
+    character = "r"
+}
+object "c8 : TextEditor" as t8 {
+    character = "l"
+}
+object "c9 : TextEditor" as t9 {
+    character = "d"
+}
+object "c10 : TextEditor" as t10 {
+    character = "C"
+}
+object "c11 : TextEditor" as t11 {
+    character = "S"
+}
+object "c12 : TextEditor" as t12 {
+    character = "5"
+}
+object "c13 : TextEditor" as 13 {
+    character = "8"
+}
+object "c14 : TextEditor" as t14 {
+     character = "0"
+}
+object "c15 : TextEditor" as t15 {
+     character = "0"
+}
+
+object "fonts : FontsFactory" as f0 {
+    instance = FontsFactory
+    fonts[0] = Ariel()
+}
+
+object "colors: ColorsFactory" as c0 {
+    instance = ColorFactory
+    color[0] = Red()
+}
+
+object "sizes: SizeFactory" as s0 {
+    instance = SizeFacotry
+    size[0] = Twelve()
+}
+
+object "a: Ariel" as ar0 {
+    name = "Arial"
+}
+
+object "red0:Red" as red0 {
+    name = "Red"
+}
+
+object "tw0:Twelve" as tw0 {
+    value = 12
+}
+
+t0 o-- f0
+t0 o-- c0
+t0 o-- s0
+f0 o-- ar0
+c0 o-- red0
+s0 o-- tw0
+
+object "fonts : FontsFactory" as f1 {
+    instance = FontsFactory
+    fonts[0] = Ariel()
+    fonts[1] = Ariel()
+}
+
+object "colors: ColorsFactory" as c1 {
+    instance = ColorFactory
+    color[0] = Red()
+    color[1] = Blue()
+}
+
+object "sizes: SizeFactory" as s1 {
+    instance = SizeFacotry
+    size[0] = Twelve()
+    size[1] = Sixteen()
+}
+
+object "ar1: Ariel" as ar1 {
+    name = "Arial"
+}
+
+object "blue0:Blue" as blue0 {
+    name "Blue"
+}
+Object "sx0:Sixteen" as sx0 {
+    value = 16
+}
+
+t1 o-- f1
+t1 o-- c1
+t1 o-- s1
+f1 o-- ar1
+c1 o-- blue0
+s1 o-- sx0
+
+object "fonts : FontsFactory" as f2 {
+    instance = FontsFactory
+    fonts[0] = Ariel()
+    fonts[1] = Ariel()
+    fonts[2] = Verdana()
+}
+
+object "colors: ColorsFactory" as c2 {
+    instance = ColorFactory
+    color[0] = Red()
+    color[1] = Blue()
+    color[2] = Blue()
+}
+
+object "sizes: SizeFactory" as s2 {
+    instance = SizeFacotry
+    size[0] = Twelve()
+    size[1] = Sixteen()
+    size[2] = Sixteen()
+}
+
+object "v0:Verdana" as v0 {
+    name = "Verdana"
+}
+
+object "blue1:Blue" as blue1 {
+    name "Blue"
+}
+
+Object "sx1:Sixteen" as sx1 {
+    value = 16
+}
+
+t2 o-- f2
+t2 o-- c2
+t2 o-- s2
+f2 o-- v0
+c2 o-- blue1
+s2 o-- sx1
+
+object "fonts : FontsFactory" as f3 {
+    instance = FontsFactory
+    fonts[0] = Ariel()
+    fonts[1] = Ariel()
+    fonts[2] = Verdana()
+    fonts[3] = Ariel()
+}
+
+object "colors: ColorsFactory" as c3 {
+    instance = ColorFactory
+    color[0] = Red()
+    color[1] = Blue()
+    color[2] = Blue()
+    color[3] = Black()
+}
+
+object "sizes: SizeFactory" as s3 {
+    instance = SizeFacotry
+    size[0] = Twelve()
+    size[1] = Sixteen()
+    size[2] = Sixteen()
+    size[3] = Fourteen()
+}
+
+object "ar2: Ariel" as ar2 {
+    name = "Arial"
+}
+
+object "black0:Black" as black0 {
+    name = "Black"
+}
+
+object "fo0:Fourteen" as fo0 {
+    value = 14
+}
+t3 o-- f3
+t3 o-- c3
+t3 o-- s3
+f3 o-- ar2
+c3 o-- black0
+s3 o-- fo0
+
+
+object "fonts : FontsFactory" as f4 {
+    instance = FontsFactory
+    fonts[0] = Ariel()
+    fonts[1] = Ariel()
+    fonts[2] = Verdana()
+    fonts[3] = Ariel()
+    fonts[4] = Calibri()
+}
+
+object "colors: ColorsFactory" as c4 {
+    instance = ColorFactory
+    color[0] = Red()
+    color[1] = Blue()
+    color[2] = Blue()
+    color[3] = Black()
+    color[4] = Red()
+}
+
+object "sizes: SizeFactory" as s4 {
+    instance = SizeFacotry
+    size[0] = Twelve()
+    size[1] = Sixteen()
+    size[2] = Sixteen()
+    size[3] = Fourteen()
+    size[4] = Twelve()
+}
+
+object "ca0: Calibri" as ca0 {
+    name = "Calibri"
+}
+
+object "red1:Red" as red1 {
+    name = "Red"
+}
+
+object "tw1:Twelve" as tw1 {
+    value = 12
+}
+
+t4 o-- f4
+t4 o-- c4
+t4 o-- s4
+f4 o-- ca0
+c4 o-- red1
+s4 o-- tw1
+
+object "fonts : FontsFactory" as f5 {
+    instance = FontsFactory
+    fonts[0] = Ariel()
+    fonts[1] = Ariel()
+    fonts[2] = Verdana()
+    fonts[3] = Ariel()
+    fonts[4] = Calibri()
+    fonts[5] = Verdana()
+}
+
+object "colors: ColorsFactory" as c5 {
+    instance = ColorFactory
+    color[0] = Red()
+    color[1] = Blue()
+    color[2] = Blue()
+    color[3] = Black()
+    color[4] = Red()
+    color[5] = Blue()
+}
+
+object "sizes: SizeFactory" as s5 {
+    instance = SizeFacotry
+    size[0] = Twelve()
+    size[1] = Sixteen()
+    size[2] = Sixteen()
+    size[3] = Fourteen()
+    size[4] = Twelve()
+    size[5] = Twelve()
+}
+
+object "v2:Verdana" as v1 {
+    name = "Verdana"
+}
+
+object "blue2:Blue" as blue2 {
+    name "Blue"
+}
+
+object "tw2:Twelve" as tw2 {
+    value = 12
+}
+
+t5 o-- f5
+t5 o-- c5
+t5 o-- s5
+f5 o-- v1
+c5 o-- blue2
+s5 o-- tw2
+@enduml
